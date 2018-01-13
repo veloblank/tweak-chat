@@ -5,3 +5,8 @@ if ActiveRecord::Migrator.needs_migration?
 end
 
 run ApplicationController
+use MessagesController
+use SubscribersController
+use StreamersController
+use AdminsController
+use UsersController
