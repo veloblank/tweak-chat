@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.text :username
       t.text :email
       t.text :password_digest
-      t.boolean :admin, :default => false
+      t.text :type
       t.boolean :can_assign, :default => false
       t.integer :balance, :default => nil
 

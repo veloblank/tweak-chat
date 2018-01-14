@@ -1,2 +1,2 @@
-class Subscriber < ActiveRecord::Base
+class Subscriber < User
 end

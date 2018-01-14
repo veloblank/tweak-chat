@@ -1,2 +1,2 @@
-class Streamer < ActiveRecord::Base
+class Streamer < User
 end
