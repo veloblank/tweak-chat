@@ -1,0 +1,21 @@
+<h1>TweakChat Signup:</h1>
+
+<div>
+  <form class="" action="/signup" method="post">
+    <h4><label for="username">Username:</label></h4>
+    <input type="text" id="username" name="username">
+    <h4><label for="email">Email:</label></h4>
+    <input type="text" id="email" name="email">
+    <h4><label for="password">Password:</label></h4>
+    <input type="password" id ="password" name="password"><br><br>
+    <input type="submit" name="" value="Create User">
+  </form>
+</div>
+
+<div class="error-messages">
+  <% if @user.errors.any? %>
+    <% @user.errors.messages.each do |message| %>
+    <li style="color: red"><%= message %></li>
+    <% end %>
+  <% end %>
+</div>
